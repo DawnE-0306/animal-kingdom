@@ -1,0 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-image: url("images/zoo-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 253, 244, 0.94);
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: rgba(255, 253, 244, 0.75);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+}
+
+.zoo1 {
+  color: #245c3b;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.zoo2 {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  color: #315e40;
+  margin-bottom: 15px;
+}
+
+/* Animal Directory */
+
+.z003 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.z003 div {
+  background-color: #e4f1df;
+  padding: 18px;
+  border-radius: 12px;
+  color: #245c3b;
+  font-weight: bold;
+  border: 1px solid #c8dfc1;
+  transition: 0.3s;
+}
+
+.z003 div:hover {
+  background-color: #c9e4c0;
+  transform: translateY(-3px);
+}
+
+/* Search Section */
+
+.search-box {
+  background-color: #f1f5e9;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.search-box p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.zoo4 {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #b7d2ae;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.zoo4:focus {
+  border-color: #397653;
+}
+
+.z005 {
+  background-color: #397653;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.z005:hover {
+  background-color: #245c3b;
+}
+
+/* Animal Result */
+
+.zoo6 {
+  background-color: #fff4df;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 60px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.animalH1 {
+  color: #315e40;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.animalH2 {
+  color: #b8752c;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.animalH3 {
+  background-color: #df943d;
+  color: white;
+  padding: 11px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.animalH3:hover {
+  background-color: #bd7628;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  color: #888;
+  font-size: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 22px;
+  }
+
+  .zoo1 {
+    font-size: 26px;
+  }
+
+  .z003 {
+    grid-template-columns: 1fr;
+  }
+}
